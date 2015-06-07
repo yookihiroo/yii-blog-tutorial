@@ -1,5 +1,6 @@
 <?php
+Dotenv::load(__DIR__ . '/..');
 
 return [
-    'adminEmail' => 'admin@example.com',
+    'adminEmail' => getenv('ADMIN_EMAIL'),
 ];
